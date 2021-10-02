@@ -1,5 +1,7 @@
     func checkMoves(player: String) -> Bool {
+    
         // Horizontal
+        
         if moves[0] == player && moves [1] == player && moves [2] == player {
         
             return true
@@ -14,10 +16,12 @@
 
             return true
         }
+        
         // Vertical
+        
         if moves[0] == player && moves [3] == player && moves [6] == player {
         
-                return true
+             return true
         }
         
         if moves[1] == player && moves [4] == player && moves [7] == player {
@@ -30,6 +34,7 @@
             return true
         }
         // Diagonal
+        
         if moves[0] == player && moves [4] == player && moves [8] == player {
             
             return true
@@ -37,8 +42,12 @@
             
         if moves[2] == player && moves [4] == player && moves [6] == player {
             
-                return true
+            return true
+            
             }
+            
         return false
+        
         }
+        
     }
